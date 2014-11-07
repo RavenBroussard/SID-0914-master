@@ -9,6 +9,7 @@ var salesperson = "Nikki"
 var net10 = "Unlimited Service";
 var h20 = "Limited Services;
 var rhino = true
+var planPrices = [30, 40, 50, 60];
 
 // Procedure
 say ("Welcome to Wilson's Electronics, would you to try new phone service today?");
@@ -46,3 +47,15 @@ return amountSaved;
 };
 
 //StringFunction
+
+var needPhone = function(firstPhone, secondPhone){
+	var purchasePhone = ["Yes", "No"];
+	var priceRange = ["great", "a little to much today"];
+		say("I have the perfect phone for you" + firstPhone + " and the " + secondPhone
++ "in stock today.");
+		say("The " + firstPhone + " price " + priceRange[0] + " but the " + secondPhone + " is " + priceRange[2].);
+	var finalDecision = (purchaseItems[0] + ", I am going to get" + firstPhone + ", but" + purchaseItems[1] + " I'm going to have to pass on the " + secondPhone + ", thanks for the help.");
+return finalDecision;
+};
+ 
+	
