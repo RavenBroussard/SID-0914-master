@@ -57,5 +57,17 @@ var needPhone = function(firstPhone, secondPhone){
 	var finalDecision = (purchaseItems[0] + ", I am going to get" + firstPhone + ", but" + purchaseItems[1] + " I'm going to have to pass on the " + secondPhone + ", thanks for the help.");
 return finalDecision;
 };
+
+//Array Function
+var cellService = function (planPrice, bestPrice){
+	for (var i = 0; i < planPrice.length; i++){
+	var lowerplan = planPrice[i];
+		say("The best deal we have at the moment is  " + bestPrice + " plus activation cost. Then the next best deal is " + lowerplan + " plus activation cost.");
+		}
+return lowerplan;
+};
+
+Returned Values
+
  
 	
