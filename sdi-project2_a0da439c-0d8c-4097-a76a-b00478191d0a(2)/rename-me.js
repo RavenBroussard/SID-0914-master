@@ -22,4 +22,27 @@ say ("Welcome to Wilson's Electronics, would you to try new phone service today?
 	
 // Boolean Function
 
+var customerPhone = function (customerPhone, serviceType) {
+	var sellService = true;
+	if (customerPhone >=1)
+		say("Awesome, let me tell you about the cool plans we have.");
+	} else {
+		say("Cool, let's discuss some family plans.");
+	}
+		if (
+		say("O.K. let me show you some phones
+		
+		
+//Number Function
 
+var saveMoney = function(amountSaved){
+	while (amountSaved is > 400){
+		say("I can save you at least $" + () + "or more a year.");
+		amountSaved+=20;
+	}
+	say("After doing the math I can actually save you $600!");
+	
+return amountSaved;
+};
+
+//StringFunction
