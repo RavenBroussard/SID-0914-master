@@ -134,3 +134,33 @@ var checkAvailablity = function (theAirlines, discountDays){ //pass in object to
 }
 };
 
+var scenario1 = 1;
+var familyMembersNotified = [];
+var currentDay = "mon";
+arrived(vactionSpots[scenario1]);
+
+if (newProblems(familyMembers[scenario1], problemsExists)) { // if the trip goes wrong
+	console.log("Oh my what do we do...");
+	if (currentDay === "Tuesday"){
+		var currentAirline = verify(theAirlines, currentDay);
+		console.log(currentAirline["Delta"] + " I need to get on my flight.");
+	}
+}
+else{
+	console.log("This was a great vacation.");
+}
+console.log("We have " + workersAvailable(ticketPriority) + " workers to help with this.");
+console.log(orderPart(a_helicopter[scenario1], a_discrepancies[scenario1]));
+a_pilotsNotified = notifyPilots(discPriority, a_pilots);
+for (i = 0; i < familyMembers.length; i++){
+	console.log(familyMembersNotified[i] + ", ");
+}
+console.log("have a while till the park opens, let's regroup!");
+console.log("Yea they are open, let's take pictures.");
+
+console.log("Changes to the itinerary will be: ");
+var tuesdayNews = itineraryReport();
+console.log(tuesdayNews.setTail("Lego land") + " now has " + tuesdayNews.addHours(11) + " hours, is a " + tuesdayNews.getFlght() +
+" flight's schedule is" + tuesdayNews.setStatus("down") + ".");
+console.log("sadly today was: ");
+tuesdayNews.vacationItinerary();
