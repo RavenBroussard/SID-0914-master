@@ -6,8 +6,8 @@
 // Variables
 var familyMembers = ["Raven", "Cayla", "Cyrus"];
 var vacationSpots = ["Statue of Liberty", "Lego Land", "Disney World"];
-var moneyAvailable = true;
-var moneyPriority = 2;
+var ticketsAvailable = true;
+var ticketPriority = 2;
 var knownProblems = ["no vacancies", "long lines", "not enough time"];
 var packedEverything = true;
 var luggageLost = false;
@@ -56,4 +56,67 @@ var  = function (item) {
 	}
 	
 	
-	
+//  Functions
+
+var arrived = function (vactionSpots){  //  Procedure
+	console.log("Well we are about to land at our destination, let's go and have a great time!");
+	if (vactionSpots === "Statue of Liberty"){
+		console.log("Statue of Liberty is the first thing I want to visit, let's hope everything is good.");
+	}
+	else{
+		console.log("This is Texas, let's go to Lego Land.");
+	}
+	return;
+}
+
+var newProblems = function (familyMembers, knownProblems){   //  Boolean function
+	console.log("We need to find out if we are on schedule for all this site seeing, let's ask " + familyMembers + ".");
+	if (knownProblems){
+		console.log("We'll to find a solution and move forward.");
+		return knowProblem;
+	}
+	else{
+		console.log("Everything is going so great, let's have a great time.");
+		return knownProblem;
+	}
+}
+
+var workers = function (priority){ // Number function
+ 		var availableWorkers = 0;
+	while (availableWorkers < priority){
+		console.log("Everything is so wrong.. Excuse me, can anyone help me with this?");
+		console.log("I have a priority " + ticketPriority + " problem and need " + (ticketPriority - availableWorkers) + " more people to help.");
+		availableWorkers++;
+}
+console.log("Thanks, for all the help.");
+return availableWorkers;
+}
+
+var reschedule = function (vactionSpots, reschedule){ // string function
+	var newSite;
+	var locationDistance = 10;
+	var reference = "Site seeing map";
+	if (vacationSpots === "Lego Land") {
+			newSite = "Sea Life";
+	}
+	else {
+			newSite = "Grapevine Golf Course";
+	}
+	var regroup = "We should try " + newSite + " " + reschedule + " which can be found on the map " + reference + " near by" + locationDistance + ".";
+	return regroup;
+}
+
+var notifyPilots = function (ticketPriority, familyMembers){ // array function
+	var travelHours = 7;
+	var waitInLine = 2;
+	var prepTime = 1;
+	var message = "";
+	var familyMembersNotified = [];
+	for (var i = 0; i < familyMembers.length; i++){
+		console.log("Excuse me, " + familyMembers[i] + ", I wanted to let you know that the park will be open" +
+		(travelHours + waitInLine + prepTime) + " hours.");
+		familyMembersNotified.push(familyMembers[i]);
+	}
+	return familyMembersNotified;
+}
+
