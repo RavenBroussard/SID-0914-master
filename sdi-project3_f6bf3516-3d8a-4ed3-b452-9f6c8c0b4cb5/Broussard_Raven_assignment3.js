@@ -120,3 +120,17 @@ var notifyPilots = function (ticketPriority, familyMembers){ // array function
 	return familyMembersNotified;
 }
 
+var checkAvailablity = function (theAirlines, discountDays){ //pass in object to compare to the day
+	for(var i = 0; i < theAirlines.length; i++){ //for each obj (or index) in the array...
+		console.log("fist choice");
+	var daysArray = theAirlines[i].days;
+	for (var j = 0; i < daysArray.length; j++){ //for each string in the "days" array...
+		console.log("second choice...");
+		if (daysArray[j] === "mon"){ //look for "mon"
+			console.log("third choice...");
+	return theAirlines[i];
+	}
+	}
+}
+};
+
